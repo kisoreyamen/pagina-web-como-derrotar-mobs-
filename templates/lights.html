@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Como derrotar cada Mob</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Como derrotar a:</h1>
+      <p>Solo se incluyen mobs Neutrales y Hostiles.</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Selecciona el Mob:</h2>
+    <ul class="list" id="list">
+      <li class="list__item">
+        <a href="{{url_for ('aldeanozombi')}}">
+          <img class="item__img" src="../static/img/mob/aldeanozombi.png" alt="light">
+          <span>Aldeano Zombi</span></a>
+      </li>
+      <!--Tarea #2 -->
+      <li class="list__item">
+        <a href="{{url_for ('esqueleto')}}"> 
+          <img class="item__img" src="../static/img/mob/esqueleto.png" alt="light">
+          <span>Esqueleto</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('bogged')}}"> 
+          <img class="item__img" src="../static/img/mob/bogged.png" alt="light">
+          <span>Empantanado</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('ahogado')}}"> 
+          <img class="item__img" src="../static/img/mob/Ahogado.png" alt="light">
+          <span>Ahogado</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('husk')}}"> 
+          <img class="item__img" src="../static/img/mob/vaina.png" alt="light">
+          <span>Vaina</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('zombie')}}"> 
+          <img class="item__img" src="../static/img/nomuertos.png" alt="light">
+          <span>Zombi</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('phantom')}}"> 
+          <img class="item__img" src="../static/img/mob/fantasma.png" alt="light">
+          <span>Fantasma</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('errante')}}"> 
+          <img class="item__img" src="../static/img/mob/errante.png" alt="light">
+          <span>Errante</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('esqueletowither')}}"> 
+          <img class="item__img" src="../static/img/mob/esqueleto_wither.png" alt="light">
+          <span>Esqueleto Wither</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('zoglin')}}"> 
+          <img class="item__img" src="../static/img/mob/zoglin.png" alt="light">
+          <span>Zoglin</span></a>
+      </li>
+            <li class="list__item">
+        <a href="{{url_for ('piglinzombificado')}}"> 
+          <img class="item__img" src="../static/img/mob/piglinzombificado.png" alt="light">
+          <span>Piglin Zombificado</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('wither')}}">
+          <img class="item__img" src="../static/img/mob/wither.png" alt="light">
+          <span>Wither</span></a>
+      </li>
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>

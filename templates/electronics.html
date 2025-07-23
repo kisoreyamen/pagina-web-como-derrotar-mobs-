@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+  >
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <title>Como derrotar cada Mob</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__text">
+      <h1>Como derrotar a:</h1>
+      <p>Solo se incluyen mobs Neutrales y Hostiles.</p>
+    </div>
+  </header>
+  <main>
+    {% block content %}
+    <h2 class="main__title">Selecciona el Mob:</h2>
+    <ul class="list" id="list">
+      <!-- Asignación #3 -->
+      <li class="list__item">
+        <a href="{{url_for ('abeja')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/abeja.png" alt="battery">
+          <span>Abeja</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('aranadecueva')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/aranadecueva.png" alt="battery">
+          <span>Araña de Cueva</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('zorro')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/zorro.png" alt="battery">
+          <span>Zorro</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('cabra')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/cabra.png" alt="battery">
+          <span>Cabra</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('irongolem')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/golemdehierro.png" alt="battery">
+          <span>Gólem de Hierro</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('llama')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/llama.png" alt="battery">
+          <span>Llama</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('panda')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/panda.png" alt="battery">
+          <span>Panda</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('enderman')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/enderman.png">
+          <span>Enderman</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('arana')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/arana.png">
+          <span>Araña</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('llamacomerciante')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/llama comerciante.png">
+          <span>Llama de Comerciante Errante</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('lobo')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/lobo.png">
+          <span>Lobo</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('osopolar')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/oso polar.png">
+          <span>Oso Polar</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('piglin')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/piglin.png">
+          <span>Piglin</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('blaze')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/Blaze.png">
+          <span>Blaze</span></a>
+      </li>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('enderdragon')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/ender dragon.png">
+          <span>Dragón de Ender</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('breeze')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/breeze.png">
+          <span>Breeze</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('creaking')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/creaking.png">
+          <span>Crepitante</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('creeper')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/creeper.png">
+          <span>Creeper</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('endermite')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/endermite.png">
+          <span>Endermite</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('evocador')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/evocador.png">
+          <span>Evocador</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('ghast')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/ghast.png">
+          <span>Ghast</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('hoglin')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/hoglin.png">
+          <span>Hoglin</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('piglinbruto')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/piglinbruto.png">
+          <span>Piglin Bruto</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('saqueador')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/saqueador.png">
+          <span>Saqueador</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('shulker')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/shulker.png">
+          <span>Shulker</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('silverfish')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/silverfish.png">
+          <span>Silverfish</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('slime')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/slime.png">
+          <span>Slime</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('bruja')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/bruja.png">
+          <span>Bruja</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('vex')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/vex.png">
+          <span>Vex</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('cubodemagma')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/cubodemagma.png">
+          <span>Cubo de Magma</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('devastador')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/devastador.png">
+          <span>Devastador</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('vindicador')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/vindicador.png">
+          <span>Vindicador</span></a>
+      </li>
+      <li class="list__item">
+        <a href="{{url_for ('warden')}}">
+          <img class="item__img" src="../static/img/mob/mayoria/warden.png">
+          <span>Warden</span></a>
+      </li>
+      <!--  -->
+    </ul>
+    {% endblock %}
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
